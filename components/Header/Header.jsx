@@ -24,8 +24,8 @@ const Header = () => {
 
       <div className="showcase-img">
         <Image src={images.profile_sm} className="person" alt="Abid" />
-        {/* <Image src={images.circle1} className="shape circle" alt="circle" />
-        <Image src={images.dots} className="shape dots" alt="dots" /> */}
+        {/* <Image src={images.circle1} className="shape circle" alt="circle" /> */}
+        {/* <Image src={images.dots} className="shape dots" alt="dots" /> */}
       </div>
 
       </div>

@@ -4,7 +4,7 @@ import {useEffect} from 'react';
 import { About, Footer, Header, Services, Skills, Testimonials, Work, Contact, Navbar } from '../components';
 // import { Navbar } from './components/';
 // import scrollreveal from 'scrollreveal'
-// import mixitup from 'mixitup'
+import mixitup from 'mixitup'
 
 
 export default function Home() {
@@ -28,16 +28,16 @@ export default function Home() {
 //     sr.reveal(".contact-form", {origin: "bottom", delay: 200, duration: 1200});
 // }, []);
 
-  // useEffect(() => {
-  //   mixitup(".portfolio-items", {
-  //     selectors: {
-  //       target: ".prt-card",
-  //     },
-  //     animation: {
-  //       duration: 500
-  //     }
-  //   });
-  // }, []);
+  useEffect(() => {
+    mixitup(".portfolio-items", {
+      selectors: {
+        target: ".prt-card",
+      },
+      animation: {
+        duration: 500
+      }
+    });
+  }, []);
 
   return (
     <div className="App">

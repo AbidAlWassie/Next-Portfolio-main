@@ -1,15 +1,15 @@
 import React from 'react'
-// import { images } from '../../constants'
-// import SvgDesign from '../../assets/vectors/Design'
-// import SvgPrototype from '../../assets/vectors/Prototype'
-// import SvgTesting from '../../assets/vectors/Testing'
-// import SvgResearch from '../../assets/vectors/Research'
+import { images } from '../../constants'
+import SvgDesign from '../../assets/vectors/Design'
+import SvgPrototype from '../../assets/vectors/Prototype'
+import SvgTesting from '../../assets/vectors/Testing'
+import SvgResearch from '../../assets/vectors/Research'
 const About = () => {
   return (
     <div className="about section" id="about">
       <div className="container flex justify-between items-center mx-auto">
       
-      {/* <div className="about-flex flex-[1]">
+      <div className="about-flex flex-[1]">
 
         <div className="about-card">
         <SvgDesign/>
@@ -36,7 +36,7 @@ const About = () => {
           </h3>
         </div>
 
-      </div> */}
+      </div>
 
       <div className="about-info flex-[1]">
         <h3 className="sub-heading">About me</h3>
