@@ -2,8 +2,22 @@ import React from 'react'
 import { images } from '../../constants'
 import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import Image from 'next/image'
+import { useEffect } from 'react'
+// import mixitup from 'mixitup'
 
 const Work = () => {
+
+  // useEffect(() => {
+  //   mixitup(".portfolio-items", {
+  //     selectors: {
+  //       target: ".prt-card",
+  //     },
+  //     animation: {
+  //       duration: 500
+  //     }
+  //   });
+  // }, []);
+
   return (
     <div className="work section" id="work">
         <div className="container mx-auto mb-20 w-full">

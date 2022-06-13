@@ -4,7 +4,7 @@ import {useEffect} from 'react';
 import { About, Footer, Header, Services, Skills, Testimonials, Work, Contact, Navbar } from '../components';
 // import { Navbar } from './components/';
 // import scrollreveal from 'scrollreveal'
-import mixitup from 'mixitup'
+// import mixitup from 'mixitup'
 
 
 export default function Home() {
@@ -28,19 +28,29 @@ export default function Home() {
 //     sr.reveal(".contact-form", {origin: "bottom", delay: 200, duration: 1200});
 // }, []);
 
-  useEffect(() => {
-    mixitup(".portfolio-items", {
-      selectors: {
-        target: ".prt-card",
-      },
-      animation: {
-        duration: 500
-      }
-    });
-  }, []);
+  // useEffect(() => {
+  //   mixitup(".portfolio-items", {
+  //     selectors: {
+  //       target: ".prt-card",
+  //     },
+  //     animation: {
+  //       duration: 500
+  //     }
+  //   });
+  // }, []);
 
   return (
     <div className="App">
+      <Head>
+        <link rel="shortcut icon" href="shortcut-icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Abid Al Wassie | Portfolio Website"
+        />
+        <title>Abid Al Wassie | Portfolio</title>
+      </Head>
       <Navbar />
       <Header />
       <About />
