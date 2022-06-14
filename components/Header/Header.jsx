@@ -8,7 +8,7 @@ import 'tippy.js/dist/tippy.css';
 const Header = () => {
   return (
     <header className="header section" id="home">
-      <Image src={images.square1} className="shape square" alt="" />
+      {/* <Image src={images.square1} className="shape square" alt="" /> */}
       <div className="container flex justify-between items-center mx-auto">
       <div className="showcase-info">
         <h3 className="sub-heading">Web Developer</h3>

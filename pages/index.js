@@ -1,46 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import {useEffect} from 'react';
+import Script from 'next/script'
 import { About, Footer, Header, Services, Skills, Testimonials, Work, Contact, Navbar } from '../components';
-// import { Navbar } from './components/';
-// import scrollreveal from 'scrollreveal'
-// import mixitup from 'mixitup'
-
 
 export default function Home() {
 
-//   useEffect(() => {
-//     const sr = scrollreveal({
-//       distance: '60px',
-//       duration: 2500,
-//     });
-    
-//     sr.reveal(".showcase-info", {delay: 200});
-//     sr.reveal(".showcase-img", {origin: "top", delay: 400});
-//     sr.reveal(".square", {origin: "left", delay: 600});
-//     sr.reveal(".about-flex", {origin: "bottom", delay: 0, duration: 1200});
-//     sr.reveal(".about-info", {origin: "bottom", delay: 200, duration: 1200});
-//     sr.reveal(".skills-box", {origin: "bottom", delay: 0, duration: 1200});
-//     sr.reveal(".services-info", {origin: "bottom", delay: 0, duration: 1200});
-//     sr.reveal(".services-grid", {origin: "bottom", delay: 200, duration: 1200});
-//     sr.reveal(".work .container", {origin: "bottom", delay: 0, duration: 1200});
-//     sr.reveal(".contact-info", {origin: "bottom", delay: 0, duration: 1200});
-//     sr.reveal(".contact-form", {origin: "bottom", delay: 200, duration: 1200});
-// }, []);
-
-  // useEffect(() => {
-  //   mixitup(".portfolio-items", {
-  //     selectors: {
-  //       target: ".prt-card",
-  //     },
-  //     animation: {
-  //       duration: 500
-  //     }
-  //   });
-  // }, []);
-
   return (
     <div className="App">
+      
       <Head>
         <link rel="shortcut icon" href="shortcut-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -51,6 +17,7 @@ export default function Home() {
         />
         <title>Abid Al Wassie | Portfolio</title>
       </Head>
+
       <Navbar />
       <Header />
       <About />
@@ -60,6 +27,8 @@ export default function Home() {
       <Contact />
       <Testimonials />
       <Footer />
+      {/* <Script src="/mixitup.min.js" /> */}
+      <Script src="/config.js" />
     </div>
   )
 }
@@ -189,3 +158,5 @@ function activeLink() {
   //   }
 
   }
+
+  
