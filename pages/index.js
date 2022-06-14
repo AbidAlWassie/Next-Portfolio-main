@@ -17,7 +17,6 @@ export default function Home() {
         />
         <title>Abid Al Wassie | Portfolio</title>
       </Head>
-
       <Navbar />
       <Header />
       <About />
@@ -27,8 +26,8 @@ export default function Home() {
       <Contact />
       <Testimonials />
       <Footer />
-      {/* <Script src="/mixitup.min.js" /> */}
       <Script src="/config.js" />
+      <Script src="/toggleTheme.js" />
     </div>
   )
 }

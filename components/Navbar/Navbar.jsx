@@ -6,21 +6,12 @@ import 'tippy.js/dist/tippy.css';
 
 const Navbar = () => {
 
-  // const localTheme = JSON.parse(localStorage.getItem('key_name')) || false;
-  const [scheme, setScheme] = useState(false);
-
-  const [toggle, setToggle] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle('light', scheme);
-    // localStorage.setItem('key_name', scheme); 
-  }, [scheme]);
-
-  useEffect(() => {
+    const [toggle, setToggle] = useState(false);
+    
+    useEffect(() => {
     const navbar = document.getElementById("navbar");
       navbar.classList.toggle("open", toggle);
   }, [toggle]);
-
 
   
   return (
@@ -50,7 +41,7 @@ const Navbar = () => {
       </div>
 
       <Tippy content={<div className="special"><span className="">Toggle</span> <span className="tooltip">Theme</span></div>} theme='default' placement='bottom' duration={0} arrow={true} animation="shift-toward-subtle" allowHTML={true}>
-        <button className='toggleBtn' id='toggleBtn' onClick={()=> setScheme(!scheme) }>
+        <button className='toggleBtn' id='toggleBtn'>
           <MdOutlineDarkMode/>
         </button>
       </Tippy>
