@@ -492,7 +492,7 @@
 
 
     .navbar .nav-list {
-      @apply h-[0] hidden;
+      @apply h-[0] hidden z-[10000];
     }
 
     .nav-list {
