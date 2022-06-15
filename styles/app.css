@@ -681,6 +681,10 @@ html {
   background: var(--content-inside);
 }
 
+.form-input .btn {
+  background: var(--main-color-3);
+}
+
 .form-input:hover {
   background: var(--content-focus);
 }
