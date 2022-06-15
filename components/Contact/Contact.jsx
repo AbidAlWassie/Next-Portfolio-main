@@ -37,12 +37,12 @@ const Contact = () => {
             
           </div>
 
-          <form className="contact-form" action="https://formsubmit.co/el/cebedo" method="POST">
+          <form className="contact-form" action="https://formspree.io/f/mdobjjbo" method="POST">
 
               <h3>Send me a message</h3>
-              <input type="text" className="form-input" placeholder="Your name" required/>
-              <input type="email" className="form-input" placeholder="Your email" required/>
-              <textarea placeholder="Your message" className="form-input" name="" id="" required></textarea>
+              <input name="name" type="text" className="form-input" placeholder="Your name" required/>
+              <input name="email" type="email" className="form-input" placeholder="Your email" required/>
+              <textarea name="message" placeholder="Your message" className="form-input" id="" required></textarea>
               <input type="submit" className="btn" placeholder="Send" value="Send Message"/>
             </form>
 
