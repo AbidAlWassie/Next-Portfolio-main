@@ -9,8 +9,6 @@ export default function Home() {
       
       <Head>
         <link rel="shortcut icon" href="shortcut-icon.png" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap&family=Montserrat:wght@400;500;600;700;800&display=swap&display=swap"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <meta
@@ -18,6 +16,8 @@ export default function Home() {
           content="Abid Al Wassie | Portfolio Website"
         />
         <title>Abid Al Wassie | Portfolio</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap&family=Montserrat:wght@400;500;600;700;800&display=swap&display=swap"/>
       </Head>
       <Navbar />
       <Header />

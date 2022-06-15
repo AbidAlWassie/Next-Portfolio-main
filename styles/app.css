@@ -580,144 +580,17 @@ html {
   bottom: -2px;
 }
 
-.skills-wrap {
-  display: grid;
-  grid-template-columns: repeat(5, 150px);
-  justify-content: space-between;
-}
-
 .sub-heading {
   color: var(--heading-color);
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
   border-left: 3px solid var(--main-color-2);
-  padding: 0.13rem 0.75rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
 }
 
 .heading {
   color: var(--heading-color);
-  /* font-size: 3rem; */
-  /* font-family: 'Abril Fatface'; */
-  font-family: "Open Sans";
-  font-weight: 600;
-  line-height: 1.3;
 }
 
 .text {
-  font-size: 1.2rem;
-  margin: .2rem 0;
-  line-height: 2.3;
   color: var(--text-color);
-}
-
-/* Header Styles */
-
-.header {
-  position: relative;
-}
-
-.header.container {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-  height: calc(100vh - 120px);
-  max-height: 600px;
-}
-
-.header .sub-heading {
-  margin-bottom: 0.7rem;
-}
-
-/* .header .heading {
-  font-size: 3.5rem;
-} */
-
-.header .text {
-  margin: 0.8rem 0;
-}
-
-.cta .btn {
-  margin-right: 1.5rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.9rem 1.75rem;
-  border-radius: 17px;
-  color: #fff;
-  font-size: 0.85rem;
-  letter-spacing: 0.4px;
-  /* text-transform: capitalize; */
-  transition: 300ms;
-}
-
-
-
-.btn.secondary-btn {
-  font-weight: 500;
-  font-size: 0.9rem;
-  border-radius: 0;
-  padding: 0.15rem 0;
-  position: relative;
-}
-
-.btn.secondary-btn::before {
-  background-color: var(--main-color-1);
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2.5px;
-  bottom: -2.5px;
-  left: 0;
-  transition: 300ms ease-in-out;
-}
-
-.btn.secondary-btn:hover::before {
-  width: 100%;
-}
-
-.filter-btn {
-  display: inline-block;
-  color: var(--text-white);
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  margin-left: 1.3rem;
-  text-transform: uppercase;
-  /* font-family: inherit; */
-}
-
-
-
-.showcase-img {
-  position: relative;
-  min-height: calc(100% + 120px);
-  background: linear-gradient(124deg,
-  var(--main-color-1) 50%,
-  var(--main-color-2) 50%
-  );
-  margin-top: -220px;
-  /* border-radius: 0 0 80px 80px; */
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  /* width: 45%; */
-}
-
-.showcase-img .person {
-  width: 80%;
-  /* width: 100%; */
-  /* position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); */
 }
 
 /* Prt Overlay */
