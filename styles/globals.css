@@ -313,8 +313,6 @@
   }
 
   .sub-heading {
-    color: var(--heading-color);
-    border-left: 3px solid var(--main-color-2);
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.5px;
@@ -324,7 +322,6 @@
   }
   
   .heading {
-  color: var(--heading-color);
   /* font-size: 3rem; */
   /* font-family: 'Abril Fatface'; */
   font-family: "Open Sans";
@@ -333,7 +330,6 @@
   }
   
   .text {
-    color: var(--text-color);
     font-size: 1.2rem;
     margin: .2rem 0;
     line-height: 2.3;

@@ -24,7 +24,7 @@ const Skills = () => {
                     <circle className="p-circle1" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.html} alt="" />
+                    <Image loading="eager" src={images.html} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="95">0</span>%
@@ -39,7 +39,7 @@ const Skills = () => {
                     <circle className="p-circle2" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.css} alt="" />
+                    <Image loading="eager" src={images.css} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="90">0</span>%
@@ -54,7 +54,7 @@ const Skills = () => {
                     <circle className="p-circle3" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.javascript} alt="" />
+                    <Image loading="eager" src={images.javascript} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="80">0</span>%
@@ -69,7 +69,7 @@ const Skills = () => {
                     <circle className="p-circle4" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.react} alt="" />
+                    <Image loading="eager" src={images.react} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="45">0</span>%
@@ -84,7 +84,7 @@ const Skills = () => {
                     <circle className="p-circle5" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.laravel} alt="" />
+                    <Image loading="eager" src={images.laravel} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="65">0</span>%
@@ -99,7 +99,7 @@ const Skills = () => {
                     <circle className="p-circle6" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.mysql} alt="" />
+                    <Image loading="eager" src={images.mysql} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="90">0</span>%
@@ -114,7 +114,7 @@ const Skills = () => {
                     <circle className="p-circle7" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.tailwind} alt="" />
+                    <Image loading="eager" src={images.tailwind} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="90">0</span>%
@@ -129,7 +129,7 @@ const Skills = () => {
                     <circle className="p-circle8" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image src={images.flutter} alt="" />
+                    <Image loading="eager" src={images.flutter} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="30">0</span>%
