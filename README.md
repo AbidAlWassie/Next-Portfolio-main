@@ -1,7 +1,12 @@
 ## Migrating my React site to Next
 
-First, run the development server:
+First, install the dependencies:
 
+```bash
+npm i
+```
+
+Then, run the development server:
 ```bash
 npm run dev
 # or
