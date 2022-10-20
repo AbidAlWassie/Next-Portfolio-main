@@ -29,6 +29,7 @@ const Navbar = () => {
           'home',
           'about',
           'skills',
+          'youtube',
           'services',
           'work',
           'contact'
