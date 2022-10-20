@@ -46,28 +46,32 @@ body {
   --content-focus: #273241;
   --path: #263f58;
   --path2: #d6dffa;
+  --youtube: #FF0000;
+  --youtube-dark: #b91212;
 }
 
 body.light {
-  --bg-color: #F3ECFF;
-  --main-color-1: #702FFF;
-  --main-color-dark-1: #633DDB;
+  --bg-color: #ecf5ff;
+  --main-color-1: #2f90ff;
+  --main-color-dark-1: #3d67db;
   --main-color-2: #FFD43E;
   --main-color-dark-2: #EEC434;
-  --main-color-3: #702FFF;
-  --main-color-dark-3: #633DDB;
+  --main-color-3: #2f90ff;
+  --main-color-dark-3: #3d67db;
   --bg-color-1: #FFFFFF;
   --bg-color-2: #fff;
   --bg-color-3: #C7C3CB;
   --bg-color-transparent: rgb(255, 255, 255, 0.1);
-  --heading-color: #35226C;
-  --text-color: #403B50;
+  --heading-color: #22306c;
+  --text-color: #3b4650;
   --text-color2:#414141;
   --text-white: #303030;
   --content-inside: #F8F1FF;
   --content-focus: #f1e6ff;
-  --path: #d2c3f5;
+  --path: #c3d0f5;
   --path2: #383c4b;
+  --youtube: #FF0000;
+  --youtube-dark: #b91212;
   color: var(--text-white);
 }
 
@@ -503,6 +507,113 @@ html {
   /* font-weight: 700; */
 }
 
+.youtube-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.yt-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #292236;
+  height: 265px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.yt-image {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.yt-image img {
+  width: 105%;
+}
+
+.yt-desc {
+  background: var(--bg-color-1);
+  padding: 1.1rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yt-desc h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* yt overlay */
+.yt-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  backdrop-filter: blur(0px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: 300ms;
+}
+
+.yt-image:hover .yt-overlay {
+  pointer-events: auto;
+  background: #11214d73;
+  backdrop-filter: blur(5px);
+}
+
+.yt-icon {
+  color: white !important;
+  font-size: 1.1rem;
+  margin: 0 0.4rem;
+  background-color: var(--main-color-3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.yt-icon.yt {
+  background: var(--youtube);
+}
+
+.yt-icon:hover {
+  background: var(--main-color-dark-3);
+}
+
+
+
+.yt-icon.yt:hover {
+  background: var(--youtube-dark);
+}
+
+.yt-image:hover .yt-icon {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 300ms var(--i);
+}
+
+.yt-icon.yt {
+  --i: 50ms;
+}
+
+.yt-icon.copy {
+  --i: 150ms;
+}
 
 .portfolio-items {
   display: grid;
@@ -543,54 +654,6 @@ html {
   font-size: 0.95rem;
   font-weight: 600;
   text-transform: capitalize;
-}
-
-.btn {
-  background: var(--main-color-3);
-  cursor: pointer;
-}
-
-.btn {
-  background: var(--main-color-3);
-}
-
-.btn:hover {
-  background-color: var(--main-color-dark-3);
-}
-
-.btn.secondary-btn {
-  background-color: transparent;
-  color: var(--text-white);
-  border-bottom: 2.5px solid var(--main-color-1);
-
-}
-
-.btn.secondary-btn::before {
-  background-color: var(--main-color-2);
-}
-
-.btn.secondary-btn.sm {
-  padding: 0.07rem 0.1rem;
-  font-size: 0.9rem;
-  border-bottom-width: 2px;
-}
-
-.btn.secondary-btn.sm::before {
-  height: 2px;
-  bottom: -2px;
-}
-
-.sub-heading {
-  color: var(--heading-color);
-  border-left: 3px solid var(--main-color-2);
-}
-
-.heading {
-  color: var(--heading-color);
-}
-
-.text {
-  color: var(--text-color);
 }
 
 /* Prt Overlay */
@@ -651,6 +714,56 @@ html {
 .prt-icon.code {
   --i: 150ms;
 }
+
+.btn {
+  background: var(--main-color-3);
+  cursor: pointer;
+}
+
+.btn {
+  background: var(--main-color-3);
+}
+
+.btn:hover {
+  background-color: var(--main-color-dark-3);
+}
+
+.btn.secondary-btn {
+  background-color: transparent;
+  color: var(--text-white);
+  border-bottom: 2.5px solid var(--main-color-1);
+
+}
+
+.btn.secondary-btn::before {
+  background-color: var(--main-color-2);
+}
+
+.btn.secondary-btn.sm {
+  padding: 0.07rem 0.1rem;
+  font-size: 0.9rem;
+  border-bottom-width: 2px;
+}
+
+.btn.secondary-btn.sm::before {
+  height: 2px;
+  bottom: -2px;
+}
+
+.sub-heading {
+  color: var(--heading-color);
+  border-left: 3px solid var(--main-color-2);
+}
+
+.heading {
+  color: var(--heading-color);
+}
+
+.text {
+  color: var(--text-color);
+}
+
+
 
 /* Contact Section */
 

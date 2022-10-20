@@ -3,8 +3,6 @@ changeTheme(+initialTheme);
 
 function changeTheme(isDark) {
   var body = document.body;
-  console.log(body);
-
   if (isDark) {
     localStorage.setItem("color_scheme", 1);
     body.classList.add("light");

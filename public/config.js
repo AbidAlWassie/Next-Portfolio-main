@@ -24,3 +24,13 @@ mixitup(".portfolio-items", {
     duration: 500
   }
 });
+
+mixitup(".youtube-videos", {
+  selectors: {
+    target: ".prt-card",
+  },
+  animation: {
+    duration: 500
+  }
+});
+

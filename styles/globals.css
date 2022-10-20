@@ -123,6 +123,10 @@
     @apply p-[120px_0];
   }
 
+  .youtube {
+    @apply relative pt-28;
+  }
+
   /* Skills Section */
 
   .skills-wrap {
