@@ -32,7 +32,7 @@ export default function Home({data}) {
           content="Abid Al Wassie | Portfolio Website"
         />
         <title>Abid Al Wassie | Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap&family=Montserrat:wght@400;500;600;700;800&display=swap&display=swap"/>
+        
       </Head>
       <Navbar />
       <Header />
@@ -54,7 +54,7 @@ export default function Home({data}) {
             
             <div className="filter-btns">
               <button className="filter-btn" data-filter="all">All</button>
-              <button className="filter-btn" data-filter=".frontend">Unity</button>
+              <button className="filter-btn" data-filter=".PLIWGHKiGCTxSEXgpAfdBXXJWC0YGA4R0v">Unity</button>
               <button className="filter-btn" data-filter=".backend">Godot</button>
               <button className="filter-btn" data-filter=".others">Others</button>
             </div>
@@ -64,13 +64,13 @@ export default function Home({data}) {
             <div className="youtube-videos">
 
             {data.items.map((item) => {
-              console.log(item);
+              console.log(item.snippet.playlistId);
               const { id, snippet = {}, } = item;
-              const { title, thumbnails = {}, resourceId } = snippet;
+              const { title, thumbnails = {}, resourceId, playlistId } = snippet;
               const { high = {} } = thumbnails;
               return (
                 <div key={id}>
-                  <div className="yt-card mix unity">
+                  <div className={`yt-card mix ${playlistId}`}>
                   <div className="yt-image">
 
                   <Image src={high.url} width={480} height={360} alt={title} />
@@ -90,8 +90,12 @@ export default function Home({data}) {
                   </div>
 
                   </div>
+                    <Tippy content={<div className="special"><span className="">Watch it on </span> <span className="tooltip">YouTube</span></div>} theme='default' placement='bottom' duration={0} arrow={true} animation="shift-toward-subtle" allowHTML={true}>
+                    <a href={`https://www.youtube.com/watch?v=${resourceId.videoId}`} target="_blank" rel="noreferrer" className='font-semibold text-center link'>
+                    {title}
+                    </a>
+                    </Tippy>
                   </div>
-                    <h3 className='font-semibold'>{title}</h3>
                 </div>
               )
             })}
@@ -106,7 +110,7 @@ export default function Home({data}) {
       <Contact />
       <Testimonials />
       <Footer />
-      {/* <Script src="/config.js" /> */}
+      <Script src="/config.js" />
       <Script src="/toggleTheme.js" />
       <Script src="/apis.js" />
     </div>

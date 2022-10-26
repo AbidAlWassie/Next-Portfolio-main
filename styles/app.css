@@ -1,7 +1,7 @@
 :root {
   --bg-color: #161e29;
-  --main-color-1: #702FFF;
-  --main-color-dark-1: #633DDB;
+  --main-color-1: #7f47e7;
+  --main-color-dark-1: #7051d6;
   --main-color-2: #FFD43E;
   --main-color-dark-2: #EEC434;
   --main-color-3: #2f82ff;
@@ -73,6 +73,10 @@ body.light {
   --youtube: #FF0000;
   --youtube-dark: #b91212;
   color: var(--text-white);
+}
+
+.link {
+  color: var(--text-color2);
 }
 
 .special span.tooltip {
@@ -516,7 +520,7 @@ html {
 .yt-card {
   border-radius: 15px;
   overflow: hidden;
-  background-color: #292236;
+  background: var(--content-focus);
   height: 265px;
   display: grid;
   grid-template-rows: 1fr auto;

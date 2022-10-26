@@ -4,6 +4,10 @@
 
 @layer components {
 
+  .link:hover {
+    @apply underline;
+  }
+
   input, textarea {
     @apply outline-none;
   }
@@ -329,7 +333,7 @@
   /* font-size: 3rem; */
   /* font-family: 'Abril Fatface'; */
   font-family: "Open Sans";
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
   }
   

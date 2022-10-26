@@ -27,7 +27,7 @@ mixitup(".portfolio-items", {
 
 mixitup(".youtube-videos", {
   selectors: {
-    target: ".prt-card",
+    target: ".yt-card",
   },
   animation: {
     duration: 500
