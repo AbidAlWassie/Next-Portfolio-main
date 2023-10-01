@@ -719,7 +719,7 @@ html {
   --i: 150ms;
 }
 
-.btn {
+input.btn {
   background: var(--main-color-3) !important;
   cursor: pointer;
 }
@@ -728,7 +728,7 @@ html {
   background: var(--main-color-3);
 }
 
-.btn:hover {
+input.btn:hover {
   background-color: var(--main-color-dark-3) !important;
 }
 
