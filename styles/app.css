@@ -720,12 +720,16 @@ html {
 }
 
 .btn {
-  background: var(--main-color-3);
+  background: var(--main-color-3) !important;
   cursor: pointer;
 }
 
 .btn {
   background: var(--main-color-3);
+}
+
+.btn:hover {
+  background-color: var(--main-color-dark-3) !important;
 }
 
 .btn:hover {
