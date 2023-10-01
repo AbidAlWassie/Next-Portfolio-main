@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsGithub, BsYoutube, BsFacebook } from 'react-icons/bs'
+import { BsGithub, BsYoutube, BsTwitter } from 'react-icons/bs'
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
@@ -23,8 +23,8 @@ const Footer = () => {
         <div className="social-container-lg">
           {/* <h3>Follow me:</h3> */}
           <div className="social-icons-lg">
-            <Tippy content={<div className="special">Follow Me on <span className="tooltip">Facebook</span></div>} theme='default' placement='top' duration={0} arrow={true} animation="shift-toward-subtle">
-              <a href="https://www.facebook.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsFacebook/></a>
+            <Tippy content={<div className="special">Follow Me on <span className="tooltip">Twitter</span></div>} theme='default' placement='top' duration={0} arrow={true} animation="shift-toward-subtle">
+              <a href="https://www.twitter.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsTwitter/></a>
             </Tippy>
             <Tippy content={<div className="special">Follow Me on <span className="tooltip">YouTube</span></div>} theme='default' placement='top' duration={0} arrow={true} animation="shift-toward-subtle">
               <a href="https://www.youtube.com/channel/UCYVf_0t2qsjyHILRsLatlHg" target="_blank" rel="noreferrer"><BsYoutube/></a>
