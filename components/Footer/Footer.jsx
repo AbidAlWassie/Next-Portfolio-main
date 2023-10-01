@@ -24,7 +24,7 @@ const Footer = () => {
           {/* <h3>Follow me:</h3> */}
           <div className="social-icons-lg">
             <Tippy content={<div className="special">Follow Me on <span className="tooltip">Twitter</span></div>} theme='default' placement='top' duration={0} arrow={true} animation="shift-toward-subtle">
-              <a href="https://www.twitter.com/AbidAlWassie" target="_blank" rel="noreferrer"><BsTwitter/></a>
+              <a href="https://www.twitter.com/onemandev_io" target="_blank" rel="noreferrer"><BsTwitter/></a>
             </Tippy>
             <Tippy content={<div className="special">Follow Me on <span className="tooltip">YouTube</span></div>} theme='default' placement='top' duration={0} arrow={true} animation="shift-toward-subtle">
               <a href="https://www.youtube.com/channel/UCYVf_0t2qsjyHILRsLatlHg" target="_blank" rel="noreferrer"><BsYoutube/></a>
