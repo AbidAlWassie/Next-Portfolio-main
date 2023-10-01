@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
 :root {
   --bg-color: #161e29;
   --main-color-1: #7f47e7;
@@ -21,8 +23,6 @@
   /* --footer: #B7AFC5;
   --footer-hover: #c2bccc; */
 }
-
-
 
 
 /* Dark Mode */
