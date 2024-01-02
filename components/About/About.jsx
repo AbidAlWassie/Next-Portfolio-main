@@ -41,7 +41,7 @@ const About = () => {
       <div className="about-info flex-[1]">
         <h3 className="sub-heading">About me</h3>
         <h1 className="heading">Better Design,<br /> better performance</h1>
-        <p className="text">I develop websites and applications tailored to my client&apos;s specific instructions and requirements, ensuring a customized and responsive digital solution.</p>
+        <p className="text">I&apos;m a Web Developer 5+ years of experience. I bring expertise in building responsive UIs, managing state efficiently, and integrating cutting-edge technologies. Adept at collaborating in agile environments, I thrive on delivering elegant solutions that marry functionality with an exceptional user experience.</p>
       </div>
 
       </div>
