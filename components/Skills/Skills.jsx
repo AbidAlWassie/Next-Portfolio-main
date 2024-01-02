@@ -12,7 +12,7 @@ const Skills = () => {
             <h1 className="heading">Looking forward to work with you!</h1>
             <div className="box-desc">
               <div className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reiciendis, a voluptas voluptatibus ducimus animi placeat. Iusto rerum placeat beatae, eaque repudiandae dolores commodi rem, voluptatum exercitationem earum, nihil libero!
+              I am a front-end developer specializing in JavaScript and React. With a strong focus on creating interactive and responsive user interfaces, I bring expertise in state management, component architecture, and API integration. Committed to delivering high-quality code and staying updated on industry trends.
               </div>
             </div>
           </div>

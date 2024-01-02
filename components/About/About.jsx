@@ -41,7 +41,7 @@ const About = () => {
       <div className="about-info flex-[1]">
         <h3 className="sub-heading">About me</h3>
         <h1 className="heading">Better Design,<br /> better performance</h1>
-        <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt quia doloremque, cum veniam sed facere delectus! Sequi, ducimus architecto consequuntur veniam doloribus ex facilis libero placeat, enim est ratione aperiam! Assumenda amet optio sunt reprehenderit! Saepe quos architecto magni.</p>
+        <p className="text">I develop websites and applications tailored to my client&apos;s specific instructions and requirements, ensuring a customized and responsive digital solution.</p>
       </div>
 
       </div>
