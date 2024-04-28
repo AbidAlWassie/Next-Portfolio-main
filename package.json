@@ -13,7 +13,7 @@
     "caniuse-lite": "^1.0.30001572",
     "mixitup": "^3.3.1",
     "next": "^14.0.4",
-    "react": "18.1.0",
+    "react": "^18.3.1",
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",
     "scrollreveal": "^4.0.9"
