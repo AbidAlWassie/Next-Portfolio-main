@@ -10,19 +10,19 @@
   },
   "dependencies": {
     "@tippyjs/react": "^4.2.6",
-    "caniuse-lite": "^1.0.30001572",
+    "caniuse-lite": "^1.0.30001613",
     "mixitup": "^3.3.1",
-    "next": "^14.0.4",
-    "react": "^18.2.0",
-    "react-dom": "18.1.0",
-    "react-icons": "^4.4.0",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "18.3.1",
+    "react-icons": "^5.1.0",
     "scrollreveal": "^4.0.9"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.2"
+    "autoprefixer": "^10.4.19",
+    "eslint": "9.1.1",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
   }
 }
