@@ -31,7 +31,6 @@ import vue from '../assets/vue.png';
 
 import web_development1 from '../assets/web_development1.jpg';
 import web_design1 from '../assets/web_design1.jpg';
-import web_design2 from '../assets/web_design1.jpg';
 
 
 const data = {
@@ -67,7 +66,6 @@ const data = {
   vue,
   web_development1,
   web_design1,
-  web_design2,
 };
 
 export default data;

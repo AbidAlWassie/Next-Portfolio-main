@@ -10,8 +10,9 @@
   },
   "dependencies": {
     "@tippyjs/react": "^4.2.6",
+    "caniuse-lite": "^1.0.30001572",
     "mixitup": "^3.3.1",
-    "next": "12.1.6",
+    "next": "^14.0.4",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.4.0",

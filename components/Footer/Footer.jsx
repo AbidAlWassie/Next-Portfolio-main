@@ -16,7 +16,7 @@ const Footer = () => {
       </div>
       
       <div className="row my-3">
-        <p className="text">&copy; 2022 Copyright: <a href="https://github.com/AbidAlWassie" target="_blank" rel="noreferrer">Abid Al Wassie</a></p>
+        <p className="text">&copy; 2024 Copyright: <a href="https://github.com/AbidAlWassie" target="_blank" rel="noreferrer">Abid Al Wassie</a></p>
       </div>
 
       <div className="row mt-0 mb-3">
