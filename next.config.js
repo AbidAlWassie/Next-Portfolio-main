@@ -3,6 +3,12 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['i.ytimg.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+        pathname: '**',
+      },
+    ],
   },
 }
