@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="sub-heading">Contact</div>
             <div className="heading">Leave a message!</div>
             <div className="text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam atque nobis quod aliquam, magni et. 
+              I will respond as soon as possible. 
             </div>
             
             <div className="v-list">
