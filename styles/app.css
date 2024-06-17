@@ -108,12 +108,12 @@ body.light {
   border-right-color: var(--tooltip-color);
 }
 
-.nav-link {
-  color: var(--text-color2);
+.nav-link a {
+  color: var(--text-color2) !important;
 }
 
-.nav-link:hover {
-  color: var(--text-white);
+.nav-link a:hover {
+  color: var(--text-white) !important;
 }
 
 
@@ -877,6 +877,12 @@ textarea.form-input {
     z-index: 10;
   }
 
+  .navbar {
+    height: 100px;
+    transition: height 0.3s;
+    overflow: hidden;
+  }
+
   .navbar.open {
     display: block;
     height: 412px;
@@ -884,6 +890,6 @@ textarea.form-input {
   }
 
   .hamburger .bar {
-    background: var(--heading-color);
+    background: var(--heading-color) !important;
   }
 }
