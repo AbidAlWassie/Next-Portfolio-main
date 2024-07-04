@@ -445,13 +445,23 @@ html {
 }
 
 .p-circle5 {
+  fill: rgba(255, 255, 255, 0.3);
+  stroke: rgba(255, 255, 255, 0.9);
+}
+
+/* .p-circle5 {
   fill: rgba(255, 45, 32, 0.2);
   stroke: rgba(255, 45, 32, 0.9);
-}
+} */
 
 /* .p-circle6 {
   fill: rgba(242, 145, 17, 0.2);
   stroke: rgba(242, 145, 17, 0.9);
+} */
+
+.p-circle6 {
+  fill: rgba(242, 145, 17, 0.2);
+  stroke: rgba(255, 203, 43, 0.9);
 }
 
 .p-circle7 {
@@ -462,7 +472,17 @@ html {
 .p-circle8 {
   fill: rgba(3, 169, 244, 0.2);
   stroke: rgba(3, 169, 244, 0.9);
-} */
+}
+
+.p-circle9 {
+  fill: rgba(243, 81, 29, 0.2);
+  stroke: rgba(243, 81, 29, 0.9);
+}
+
+.p-circle10 {
+  fill: rgba(17, 208, 242, 0.2);
+  stroke: rgba(17, 208, 242, 0.9);
+}
 
 @keyframes progress {
   to {

@@ -17,6 +17,8 @@ import html from '../assets/html.png';
 import css from '../assets/css.png';
 import javascript from '../assets/javascript.png';
 import react from '../assets/react.png';
+import nextjs from '../assets/nextjs.png';
+import firebase from '../assets/firebase.png';
 import laravel from '../assets/laravel.png';
 import tailwind from '../assets/tailwind.png';
 import mysql from '../assets/MySQL2.png';
@@ -47,7 +49,8 @@ const data = {
   research,
   testing,
   design,
-
+  nextjs,
+  firebase,
   cpp,
   html,
   css,

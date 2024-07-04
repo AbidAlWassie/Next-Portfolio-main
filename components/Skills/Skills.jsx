@@ -27,7 +27,7 @@ const Skills = () => {
                     <Image loading="eager" src={images.html} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="95">0</span>%
+                    <span data-target="97">0</span>%
                   </h2>
                 <div className="sk-title">HTML5</div>
                 </div>
@@ -42,7 +42,7 @@ const Skills = () => {
                     <Image loading="eager" src={images.css} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="90">0</span>%
+                    <span data-target="95">0</span>%
                   </h2>
                 <div className="sk-title">CSS3</div>
                 </div>
@@ -57,7 +57,7 @@ const Skills = () => {
                     <Image loading="eager" src={images.javascript} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="80">0</span>%
+                    <span data-target="90">0</span>%
                   </h2>
                 <div className="sk-title">JavaScript</div>
                 </div>
@@ -72,7 +72,7 @@ const Skills = () => {
                     <Image loading="eager" src={images.react} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="45">0</span>%
+                    <span data-target="65">0</span>%
                   </h2>
                 <div className="sk-title">React</div>
                 </div>
@@ -84,27 +84,27 @@ const Skills = () => {
                     <circle className="p-circle5" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image loading="eager" src={images.laravel} alt="" />
+                    <Image loading="eager" src={images.nextjs} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="65">0</span>%
+                    <span data-target="70">0</span>%
                   </h2>
-                <div className="sk-title">Laravel</div>
+                <div className="sk-title">NextJs</div>
                 </div>
               </div>
 
-              {/* <div className="skill">
+              <div className="skill">
                 <div className="sk-progress">
                   <svg className="p-circle6">
                     <circle className="p-circle6" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image loading="eager" src={images.mysql} alt="" />
+                    <Image loading="eager" src={images.firebase} alt="" />
                   </div>
                   <h2 className="counter">
                     <span data-target="90">0</span>%
                   </h2>
-                <div className="sk-title">MySQL</div>
+                <div className="sk-title">Firebase</div>
                 </div>
               </div>
 
@@ -117,7 +117,7 @@ const Skills = () => {
                     <Image loading="eager" src={images.tailwind} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="90">0</span>%
+                    <span data-target="50">0</span>%
                   </h2>
                 <div className="sk-title">Tailwind</div>
                 </div>
@@ -129,14 +129,44 @@ const Skills = () => {
                     <circle className="p-circle8" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
-                    <Image loading="eager" src={images.flutter} alt="" />
+                    <Image loading="eager" src={images.react} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="30">0</span>%
+                    <span data-target="45">0</span>%
                   </h2>
-                <div className="sk-title">Flutter</div>
+                <div className="sk-title">Native</div>
                 </div>
-              </div> */}
+              </div>
+
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle9">
+                    <circle className="p-circle9" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <Image loading="eager" src={images.git} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="100">0</span>%
+                  </h2>
+                <div className="sk-title">Git</div>
+                </div>
+              </div>
+
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle10">
+                    <circle className="p-circle10" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <Image loading="eager" src={images.figma} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="96">0</span>%
+                  </h2>
+                <div className="sk-title">Figma</div>
+                </div>
+              </div>
 
             </div>
         </div>
