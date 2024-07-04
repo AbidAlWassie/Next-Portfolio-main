@@ -117,7 +117,7 @@ const Skills = () => {
                     <Image loading="eager" src={images.tailwind} alt="" />
                   </div>
                   <h2 className="counter">
-                    <span data-target="50">0</span>%
+                    <span data-target="90">0</span>%
                   </h2>
                 <div className="sk-title">Tailwind</div>
                 </div>
