@@ -31,6 +31,10 @@ import python from '../assets/python.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
+import team_website1 from '../assets/work/team_website1.jpg';
+import topdown_game1 from '../assets/work/topdown_game1.jpg';
+import tilemap_editor1 from '../assets/work/tilemap_editor1.jpg';
+// import web_design1 from '../assets/work/';
 import web_development1 from '../assets/web_development1.jpg';
 import web_design1 from '../assets/web_design1.jpg';
 
@@ -69,6 +73,9 @@ const data = {
   vue,
   web_development1,
   web_design1,
+  team_website1,
+  topdown_game1,
+  tilemap_editor1
 };
 
 export default data;

@@ -42,21 +42,21 @@ const Work = () => {
 
             <div className="prt-card mix backend">
             <div className="prt-image">
-                <Image src={images.web_development1} alt="" />
+                <Image src={images.team_website1} alt="" />
 
                 <div className="prt-overlay">
-                  <a href="view" className="prt-icon view">
+                  <a href="https://develeven-io.vercel.app/" target="_blank" className="prt-icon view">
                     <AiFillEye/>
                   </a>
 
-                  <a href="code" className="prt-icon code">
+                  <a href="https://github.com/DEVELEVEN-io/develeven-io" target="_blank" className="prt-icon code">
                     <AiFillGithub/>
                   </a>
                 </div>
               </div>
               <div className="prt-desc">
-                <h3>Web App</h3>
-                <a href="null" className="btn secondary-btn sm">Read more</a>
+                <h3>DevEleven-io</h3>
+                <a href="https://develeven-io.vercel.app/" target="_blank" className="btn secondary-btn sm">Live Demo</a>
               </div>
             </div>
 
@@ -164,41 +164,41 @@ const Work = () => {
 
             <div className="prt-card mix others">
             <div className="prt-image">
-                <Image src={images.web_development1} alt="" />
+                <Image src={images.topdown_game1} alt="" />
 
                 <div className="prt-overlay">
-                  <a href="view" className="prt-icon view">
+                  <a href="https://onemandev-io.itch.io/" target="_blank" className="prt-icon view">
                     <AiFillEye/>
                   </a>
 
-                  <a href="code" className="prt-icon code">
+                  <a href="https://github.com/AbidAlWassie/Forest-Knight" target="_blank" className="prt-icon code">
                     <AiFillGithub/>
                   </a>
                 </div>
               </div>
               <div className="prt-desc">
-                <h3>Web App</h3>
-                <a href="null" className="btn secondary-btn sm">Read more</a>
+                <h3>Forest Knight</h3>
+                <a href="https://onemandev-io.itch.io/" target="_blank" className="btn secondary-btn sm">Live Demo</a>
               </div>
             </div>
 
             <div className="prt-card mix others">
             <div className="prt-image">
-                <Image src={images.web_development1} alt="" />
+                <Image src={images.tilemap_editor1} alt="" />
 
                 <div className="prt-overlay">
-                  <a href="view" className="prt-icon view">
+                  <a href="https://onemandev-io.github.io/tilemap-editor/" target="_blank" className="prt-icon view">
                     <AiFillEye/>
                   </a>
 
-                  <a href="code" className="prt-icon code">
+                  <a href="https://github.com/oneManDev-io/tilemap-editor" target="_blank" className="prt-icon code">
                     <AiFillGithub/>
                   </a>
                 </div>
               </div>
               <div className="prt-desc">
-                <h3>Web App</h3>
-                <a href="null" className="btn secondary-btn sm">Read more</a>
+                <h3>Tilemap Editor</h3>
+                <a href="https://onemandev-io.github.io/tilemap-editor/" target="_blank" className="btn secondary-btn sm">Live Demo</a>
               </div>
             </div>
 
