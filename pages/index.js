@@ -13,7 +13,6 @@ const YOUTUBE_PLAYLIST_ITEMS_API = "https://www.googleapis.com/youtube/v3/playli
 export const getStaticProps = async () => {
   const res =  await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&playlistId=PLIWGHKiGCTxSEXgpAfdBXXJWC0YGA4R0v&maxResults=50&key=${process.env.YOUTUBE_API_KEY}`);
   const data = await res.json();
-  // const videos = data.items;
 
   return {
     props: { data }, revalidate: 60
@@ -32,16 +31,13 @@ export default function Home({data}) {
           content="Abid Al Wassie | Portfolio Website"
         />
         <title>Abid Al Wassie | Portfolio</title>
-        
       </Head>
       <Navbar />
       <Header />
       <About />
       <Skills />
 
-      
-
-    <div className="youtube section" id="youtube">
+      <div className="youtube section" id="youtube">
           
           <div className="container mx-auto mb-20 w-full">
 
@@ -122,22 +118,18 @@ function stickyNav() {
   var navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.pageYOffset > 0);
 }
-// window.addEventListener("scroll", stickyNav);
 
 let skillsPlayed = false;
 let mlPlayed = false;
+
 if (typeof window !== "undefined") {
-window.addEventListener("scroll", () => {
-  
-  activeLink();
+  window.addEventListener("scroll", () => {
+    activeLink();
+    stickyNav();
 
-  stickyNav();
-
-  if (!skillsPlayed) loadSkills();
-
-  if (!mlPlayed) mlCounter();
-
-});
+    if (!skillsPlayed) loadSkills();
+    if (!mlPlayed) mlCounter();
+  });
 }
 
 function updateCount(num, maxNum) {
@@ -151,54 +143,40 @@ function updateCount(num, maxNum) {
   }
 }
 
+function isInViewport(element, offset = 0) {
+  const rect = element.getBoundingClientRect();
+  return rect.top <= (window.innerHeight || document.documentElement.clientHeight) - offset;
+}
 
 function loadSkills() {
   const skCounters = document.querySelectorAll(".counter span");
   const progressBars = document.querySelectorAll(".sk-progress svg circle");
-  // const scrollable =  document.documentElement.scrollHeight - window.innerHeight;
-  
-    const scrolled = window.scrollY;
 
-    if (scrolled >= 1200) {
-      
-      for (let i = 0; i < skCounters.length; i++) {
+  if (skCounters.length > 0 && isInViewport(skCounters[0], 0)) {
+    for (let i = 0; i < skCounters.length; i++) {
+      skillsPlayed = true;
 
-        skillsPlayed = true;
+      const cvalue = Number(skCounters[i].dataset.target);
+      let strokeValue = 427 - 427 * (cvalue / 100);
 
-        const cvalue = Number(skCounters[i].dataset.target);
-        let strokeValue = 427 - 427 * (cvalue/100);
-
-        progressBars[i].style.animation = "progress 2s ease-in-out forwards";
-        progressBars[i].style.setProperty("--target", strokeValue);
-
-        setTimeout(() => {
-          updateCount(skCounters[i], cvalue);
-        }, 400);
-      }
+      progressBars[i].style.animation = "progress 2s ease-in-out forwards";
+      progressBars[i].style.setProperty("--target", strokeValue);
 
       setTimeout(() => {
-        window.removeEventListener("scroll", loadSkills);
-      }, 2000);
+        updateCount(skCounters[i], cvalue);
+      }, 400);
     }
+
+    setTimeout(() => {
+      window.removeEventListener("scroll", loadSkills);
+    }, 2000);
+  }
 }
-// End
-
-
-// Services Milestones Counter Animation
-
-// console.log(mlCounters);
-
 
 function mlCounter() {
-  // let mlSection = document.querySelectorAll(".milestones");
-  let mlCounters = document.querySelectorAll(".number span");
-  
-  
-  const scrolled = window.scrollY;
-  
-  if (scrolled >= 1750) {
-    // console.log(mlCounters.length);
-    
+  const mlCounters = document.querySelectorAll(".number span");
+
+  if (mlCounters.length > 0 && isInViewport(mlCounters[0], -250)) {
     for (let i = 0; i < mlCounters.length; i++) {
       mlPlayed = true;
 
@@ -207,15 +185,16 @@ function mlCounter() {
         updateCount(mlCounters[i], mvalue);
       }, 1000);
     }
-    
+
+    setTimeout(() => {
+      window.removeEventListener("scroll", mlCounter);
+    }, 2000);
   }
 }
 
 // Active Nav Links
-
 function activeLink() {
   var navbar = document.getElementById("navbar");
-  // console.log();
   let sections = document.querySelectorAll(".section");
   let passedSections = Array.from(sections).map((sect, i) => {
     return { 
@@ -224,21 +203,9 @@ function activeLink() {
     };
   }).filter(sect => sect.y <= 0);
 
-    // console.log(passedSections);
-
   let currentSectID = passedSections.at(-1).id;
-  // console.log(currentSectID);
-  
   let navLinks = document.querySelectorAll(".nav-link");
 
   navLinks.forEach(l => l.classList.remove("active"));
   navLinks[currentSectID].classList.add("active");
-
-  // for (let i = 0; i < navLinks.length; i++) {
-      
-  //     console.log();
-  //   }
-
-  }
-
-  
+}

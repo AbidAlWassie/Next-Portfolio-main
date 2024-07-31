@@ -12,41 +12,11 @@ const Skills = () => {
             <h1 className="heading">Looking forward to work with you!</h1>
             <div className="box-desc">
               <div className="text">
-              I am a front-end developer specializing in JavaScript and React. With a strong focus on creating interactive and responsive user interfaces, I bring expertise in state management, component architecture, and API integration. Committed to delivering high-quality code and staying updated on industry trends.
+              I am a full stack developer specializing in TypeScript and React. I use Next.js for SSR, SSG and CSG sites optimized for performance. I use Auth.js for secure authentication. I tend to focus on creating interactive and responsive user interfaces for all devices. I am committed to delivering high-quality code and staying updated on industry trends.
               </div>
             </div>
           </div>
             <div className="skills-wrap">
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle1">
-                    <circle className="p-circle1" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.html} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="97">0</span>%
-                  </h2>
-                <div className="sk-title">HTML5</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle2">
-                    <circle className="p-circle2" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.css} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="95">0</span>%
-                  </h2>
-                <div className="sk-title">CSS3</div>
-                </div>
-              </div>
 
               <div className="skill">
                 <div className="sk-progress">
@@ -168,13 +138,41 @@ const Skills = () => {
                 </div>
               </div>
 
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle1">
+                    <circle className="p-circle1" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <Image loading="eager" src={images.html} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="97">0</span>%
+                  </h2>
+                <div className="sk-title">HTML5</div>
+                </div>
+              </div>
+
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle2">
+                    <circle className="p-circle2" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <Image loading="eager" src={images.css} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="95">0</span>%
+                  </h2>
+                <div className="sk-title">CSS3</div>
+                </div>
+              </div>
+
             </div>
         </div>
       </div>
     </div>
   )
 }
-
-
 
 export default Skills
