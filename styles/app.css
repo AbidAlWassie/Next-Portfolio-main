@@ -508,11 +508,27 @@ html {
   stroke: rgba(0, 122, 204, 0.9);
 }
 
+/* TypeScript */
+.p-circle17 {
+  fill: rgba(197, 247, 79, 0.2);
+  stroke: rgba(197, 247, 79, 0.9);
+}
+
+/* Auth.js */
+.p-circle18 {
+  fill: rgba(183, 40, 229, 0.2);
+  stroke: rgba(183, 40, 229, 0.902);
+}
+
 .p-circle101 {
   fill: rgba(1, 181, 213, 0.2);
   stroke: rgba(1, 181, 213, 0.9);
 }
 
+.icon-sm img {
+  width: 20px;
+  height: 20px;
+}
 
 @keyframes progress {
   to {

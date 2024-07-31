@@ -31,6 +31,10 @@ import python from '../assets/python.png';
 import typescript from '../assets/typescript.png';
 import ts from '../assets/ts.svg';
 import vue from '../assets/vue.png';
+import drizzle from '../assets/drizzle.png';
+import prisma from '../assets/prisma.png';
+import mongodb from '../assets/mongodb.png';
+import authjs from '../assets/authjs.png';
 
 import team_website1 from '../assets/work/team_website1.jpg';
 import topdown_game1 from '../assets/work/topdown_game1.jpg';
@@ -70,6 +74,10 @@ const data = {
   graphql,
   node,
   python,
+  drizzle,
+  prisma,
+  mongodb,
+  authjs,
   typescript,
   vue,
   ts,

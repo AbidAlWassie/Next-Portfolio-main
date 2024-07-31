@@ -1,6 +1,25 @@
-import React from 'react'
+"use client";
+import { useEffect, useState } from 'react';
 import { images } from '../../constants'
 import Image from 'next/image'
+
+const skillsData = [
+  { name: 'JavaScript', proficiency: 90, image: images.javascript, circleClass: 'p-circle3' },
+  { name: 'TypeScript', proficiency: 75, image: images.ts, circleClass: 'p-circle16 icon-sm' },
+  { name: 'React', proficiency: 75, image: images.react, circleClass: 'p-circle4' },
+  { name: 'Next.js', proficiency: 70, image: images.nextjs, circleClass: 'p-circle6' },
+  { name: 'Auth.js', proficiency: 55, image: images.authjs, circleClass: 'p-circle18 icon-sm' },
+  { name: 'Prisma', proficiency: 70, image: images.prisma, circleClass: 'p-circle14' },
+  { name: 'Drizzle', proficiency: 65, image: images.drizzle, circleClass: 'p-circle17 icon-sm' },
+  { name: 'Firebase', proficiency: 55, image: images.firebase, circleClass: 'p-circle11' },
+  { name: 'MongoDB', proficiency: 58, image: images.mongodb, circleClass: 'p-circle13 icon-sm' },
+  { name: 'Figma', proficiency: 90, image: images.figma, circleClass: 'p-circle9' },
+  { name: 'Git', proficiency: 100, image: images.git, circleClass: 'p-circle10' },
+  { name: 'Tailwind', proficiency: 90, image: images.tailwind, circleClass: 'p-circle7' },
+  { name: 'CSS3', proficiency: 95, image: images.css, circleClass: 'p-circle2' },
+  { name: 'HTML5', proficiency: 98, image: images.html, circleClass: 'p-circle1' },
+  { name: 'Python', proficiency: 75, image: images.python, circleClass: 'p-circle8' },
+];
 
 const Skills = () => {
   return (
@@ -17,161 +36,28 @@ const Skills = () => {
             </div>
           </div>
 
-            <div className="skills-wrap">
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle3">
-                    <circle className="p-circle3" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.javascript} alt="" />
+          <div className="skills-wrap">
+              {skillsData.map((skill, index) => (
+                <div key={index} className="skill">
+                  <div className="sk-progress">
+                    <svg className={skill.circleClass}>
+                      <circle className={skill.circleClass} cx={75} cy={75} r={68} />
+                    </svg>
+                    <div className="techLogo">
+                      <Image loading="eager" src={skill.image} alt={`${skill.name} logo`} width={150} height={150} />
+                    </div>
+                    <h2 className="counter">
+                      <span data-target={skill.proficiency}>0</span>%
+                    </h2>
+                    <h1 className="sk-title">{skill.name}</h1>
                   </div>
-                  <h2 className="counter">
-                    <span data-target="90">0</span>%
-                  </h2>
-                <div className="sk-title">JavaScript</div>
                 </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle16">
-                    <circle className="p-circle16" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.ts} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="45">0</span>%
-                  </h2>
-                <div className="sk-title">TypeScript</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle4">
-                    <circle className="p-circle4" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.react} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="65">0</span>%
-                  </h2>
-                <div className="sk-title">React</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle6">
-                    <circle className="p-circle6" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.nextjs} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="70">0</span>%
-                  </h2>
-                <div className="sk-title">Next.js</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle11">
-                    <circle className="p-circle11" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.firebase} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="90">0</span>%
-                  </h2>
-                <div className="sk-title">Firebase</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle7">
-                    <circle className="p-circle7" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.tailwind} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="90">0</span>%
-                  </h2>
-                <div className="sk-title">Tailwind</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle10">
-                    <circle className="p-circle10" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.git} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="100">0</span>%
-                  </h2>
-                <div className="sk-title">Git</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle9">
-                    <circle className="p-circle9" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.figma} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="96">0</span>%
-                  </h2>
-                <div className="sk-title">Figma</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle1">
-                    <circle className="p-circle1" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.html} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="97">0</span>%
-                  </h2>
-                <div className="sk-title">HTML5</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle2">
-                    <circle className="p-circle2" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.css} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="95">0</span>%
-                  </h2>
-                <div className="sk-title">CSS3</div>
-                </div>
-              </div>
+              ))}
+            </div>
 
             </div>
         </div>
       </div>
-    </div>
   )
 }
 
