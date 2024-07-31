@@ -16,8 +16,8 @@ const Skills = () => {
               </div>
             </div>
           </div>
-            <div className="skills-wrap">
 
+            <div className="skills-wrap">
               <div className="skill">
                 <div className="sk-progress">
                   <svg className="p-circle3">
@@ -30,6 +30,21 @@ const Skills = () => {
                     <span data-target="90">0</span>%
                   </h2>
                 <div className="sk-title">JavaScript</div>
+                </div>
+              </div>
+
+              <div className="skill">
+                <div className="sk-progress">
+                  <svg className="p-circle16">
+                    <circle className="p-circle16" cx={75} cy={75} r={68}/>
+                  </svg>
+                  <div className="techLogo">
+                    <Image loading="eager" src={images.ts} alt="" />
+                  </div>
+                  <h2 className="counter">
+                    <span data-target="45">0</span>%
+                  </h2>
+                <div className="sk-title">TypeScript</div>
                 </div>
               </div>
 
@@ -50,8 +65,8 @@ const Skills = () => {
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg className="p-circle5">
-                    <circle className="p-circle5" cx={75} cy={75} r={68}/>
+                  <svg className="p-circle6">
+                    <circle className="p-circle6" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
                     <Image loading="eager" src={images.nextjs} alt="" />
@@ -59,14 +74,14 @@ const Skills = () => {
                   <h2 className="counter">
                     <span data-target="70">0</span>%
                   </h2>
-                <div className="sk-title">NextJs</div>
+                <div className="sk-title">Next.js</div>
                 </div>
               </div>
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg className="p-circle6">
-                    <circle className="p-circle6" cx={75} cy={75} r={68}/>
+                  <svg className="p-circle11">
+                    <circle className="p-circle11" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
                     <Image loading="eager" src={images.firebase} alt="" />
@@ -95,23 +110,8 @@ const Skills = () => {
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg className="p-circle8">
-                    <circle className="p-circle8" cx={75} cy={75} r={68}/>
-                  </svg>
-                  <div className="techLogo">
-                    <Image loading="eager" src={images.react} alt="" />
-                  </div>
-                  <h2 className="counter">
-                    <span data-target="45">0</span>%
-                  </h2>
-                <div className="sk-title">Native</div>
-                </div>
-              </div>
-
-              <div className="skill">
-                <div className="sk-progress">
-                  <svg className="p-circle9">
-                    <circle className="p-circle9" cx={75} cy={75} r={68}/>
+                  <svg className="p-circle10">
+                    <circle className="p-circle10" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
                     <Image loading="eager" src={images.git} alt="" />
@@ -125,8 +125,8 @@ const Skills = () => {
 
               <div className="skill">
                 <div className="sk-progress">
-                  <svg className="p-circle10">
-                    <circle className="p-circle10" cx={75} cy={75} r={68}/>
+                  <svg className="p-circle9">
+                    <circle className="p-circle9" cx={75} cy={75} r={68}/>
                   </svg>
                   <div className="techLogo">
                     <Image loading="eager" src={images.figma} alt="" />

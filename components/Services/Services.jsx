@@ -60,7 +60,7 @@ const Services = () => {
 
           <div className="service-card">
             <div className="card-desc">
-              <h3>Lastest Tech</h3>
+              <h3>Latest Tech</h3>
               <p className="text">I leverage cutting-edge technologies in web development, staying at the forefront of industry advancements. From progressive frameworks to emerging tools, I ensure my work is innovative, efficient, and future-ready.</p>
             </div>
             <a href="test" className="btn secondary-btn">Read more</a>

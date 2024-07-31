@@ -29,6 +29,7 @@ import graphql from '../assets/graphql.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import typescript from '../assets/typescript.png';
+import ts from '../assets/ts.svg';
 import vue from '../assets/vue.png';
 
 import team_website1 from '../assets/work/team_website1.jpg';
@@ -71,6 +72,7 @@ const data = {
   python,
   typescript,
   vue,
+  ts,
   web_development1,
   web_design1,
   team_website1,
